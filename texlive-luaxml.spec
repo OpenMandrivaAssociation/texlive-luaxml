@@ -1,11 +1,11 @@
-# revision 27394
+# revision 30712
 # category Package
 # catalog-ctan /macros/luatex/generic/luaxml
-# catalog-date 2012-08-13 11:53:38 +0200
+# catalog-date 2013-05-27 20:07:27 +0200
 # catalog-license other-free
-# catalog-version 0.0.1
+# catalog-version 0.0.2
 Name:		texlive-luaxml
-Version:	0.0.1
+Version:	0.0.2
 Release:	1
 Summary:	Lua library for reading and serialising XML files
 Group:		Publishing
