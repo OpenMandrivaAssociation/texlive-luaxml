@@ -6,7 +6,7 @@
 # catalog-version 0.0.2
 Name:		texlive-luaxml
 Version:	0.0.2
-Release:	6
+Release:	7
 Summary:	Lua library for reading and serialising XML files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/generic/luaxml
