@@ -1,6 +1,6 @@
 Name:		texlive-luaxml
 Version:	60709
-Release:	1
+Release:	2
 Summary:	Lua library for reading and serialising XML files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/generic/luaxml
