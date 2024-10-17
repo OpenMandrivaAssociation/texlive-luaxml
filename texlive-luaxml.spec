@@ -3,7 +3,7 @@ Version:	71803
 Release:	1
 Summary:	Lua library for reading and serialising XML files
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/luatex/generic/luaxml
+URL:		https://www.ctan.org/tex-archive/macros/luatex/generic/luaxml
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luaxml.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luaxml.doc.r%{version}.tar.xz
