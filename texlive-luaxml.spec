@@ -1,5 +1,5 @@
 Name:		texlive-luaxml
-Version:	71803
+Version:	72574
 Release:	1
 Summary:	Lua library for reading and serialising XML files
 Group:		Publishing
