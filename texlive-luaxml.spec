@@ -1,42 +1,23 @@
-Name:		texlive-luaxml
-Version:	72858
-Release:	1
+%global tl_name luaxml
+%global tl_revision 78101
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	0.2c
+Release:	%{tl_revision}.1
 Summary:	Lua library for reading and serialising XML files
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/luatex/generic/luaxml
-License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luaxml.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luaxml.doc.r%{version}.tar.xz
+License:	other-free
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/luaxml.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/luaxml.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+BuildSystem:	texlive
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-This is a redistribution of a pure lua xml library, LuaXML. The
-library was originally distributed as part of the odsfile
-package, but is made available separately in the hope that it
-can be useful for other projects.
+LuaXML is a pure Lua library for reading and serializing XML files. The
+current release is aimed mainly at support for the odsfile package. The
+documentation was created by automatic conversion of original
+documentation in the source code.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/luatex/luaxml
-%doc %{_texmfdistdir}/doc/luatex/luaxml
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c -a1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc %{buildroot}%{_texmfdistdir}
